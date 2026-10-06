@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="900"
+   height="560"
+   viewBox="0 0 900 560"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
+    </marker>
+    <style>
+      .title { font: 700 18px sans-serif; }
+      .label { font: 13px sans-serif; font-weight: 700; }
+      .small { font: 11px sans-serif; }
+      .mono { font: 11px monospace; }
+      .box { fill: #fff; stroke: #111; stroke-width: 1.5; }
+      .oval { fill: #e3f2fd; stroke: #1976d2; stroke-width: 1.5; }
+      .cyl { fill: #f3e5f5; stroke: #8e24aa; stroke-width: 1.5; }
+      .edge { stroke: #111; stroke-width: 1.4; fill: none; marker-end: url(#arrow); }
+      .edgelabel { font: 11px sans-serif; fill: #333; }
+    </style>
+  </defs>
+
+  <text x="20" y="28" class="title">Figure 1 (redrawn) - DID architecture (W3C DID 1.1, &#167;1.3)</text>
+
+  <!-- DID Subject -->
+  <ellipse cx="140" cy="95" rx="105" ry="48" class="oval"/>
+  <text x="140" y="90" text-anchor="middle" class="label">DID Subject</text>
+  <text x="140" y="106" text-anchor="middle" class="small">entity identified by the DID</text>
+
+  <!-- DID Controller -->
+  <ellipse cx="140" cy="450" rx="105" ry="48" class="oval"/>
+  <text x="140" y="445" text-anchor="middle" class="label">DID Controller</text>
+  <text x="140" y="461" text-anchor="middle" class="small">entity that can change the</text>
+  <text x="140" y="474" text-anchor="middle" class="small">DID document</text>
+
+  <!-- DID -->
+  <rect x="360" y="35" width="210" height="70" rx="6" class="box"/>
+  <text x="465" y="60" text-anchor="middle" class="label">DID</text>
+  <text x="465" y="85" text-anchor="middle" class="mono">did:example:123</text>
+
+  <!-- DID URL -->
+  <rect x="355" y="228" width="220" height="80" rx="6" class="box"/>
+  <text x="465" y="253" text-anchor="middle" class="label">DID URL</text>
+  <text x="465" y="277" text-anchor="middle" class="mono">did:example:123/path</text>
+  <text x="465" y="293" text-anchor="middle" class="mono">/to/rsrc</text>
+
+  <!-- DID document -->
+  <rect x="345" y="425" width="240" height="80" rx="6" class="box"/>
+  <text x="465" y="450" text-anchor="middle" class="label">DID Document</text>
+  <text x="465" y="470" text-anchor="middle" class="small">verification methods,</text>
+  <text x="465" y="484" text-anchor="middle" class="small">services, ...</text>
+
+  <!-- Verifiable Data Registry (cylinder) -->
+  <rect x="700" y="185" width="150" height="200" class="cyl"/>
+  <ellipse cx="775" cy="185" rx="75" ry="18" class="cyl"/>
+  <path d="M 700,385 A 75,18 0 0 0 850,385" class="box" fill="none" stroke="#8e24aa"/>
+  <text x="775" y="150" text-anchor="middle" class="label">Verifiable Data</text>
+  <text x="775" y="166" text-anchor="middle" class="label">Registry</text>
+
+  <!-- Edges -->
+  <!-- resolves to: DID -> DID document, routed left of the DID URL box -->
+  <path d="M 355,90 L 320,90 L 320,435 L 345,435" class="edge"/>
+  <text x="222" y="280" class="edgelabel" text-anchor="middle">resolves to</text>
+
+  <!-- contains: DID URL -> DID -->
+  <path d="M 500,228 L 500,105" class="edge"/>
+  <text x="565" y="170" class="edgelabel" text-anchor="middle">contains</text>
+
+  <!-- refers, and dereferences, to: DID URL -> DID document -->
+  <path d="M 500,308 L 500,425" class="edge"/>
+  <text x="590" y="370" class="edgelabel" text-anchor="middle">refers, and</text>
+  <text x="590" y="384" class="edgelabel" text-anchor="middle">dereferences, to</text>
+
+  <!-- refers to: DID -> DID Subject -->
+  <path d="M 360,60 L 250,75" class="edge"/>
+  <text x="300" y="55" class="edgelabel" text-anchor="middle">refers to</text>
+
+  <!-- controls: DID Controller -> DID document -->
+  <path d="M 250,470 L 345,485" class="edge"/>
+  <text x="295" y="440" class="edgelabel" text-anchor="middle">controls</text>
+
+  <!-- recorded on: DID -> VDR -->
+  <path d="M 570,65 L 700,220" class="edge"/>
+  <text x="650" y="130" class="edgelabel" text-anchor="middle">recorded on</text>
+
+  <!-- recorded on: DID document -> VDR -->
+  <path d="M 585,460 L 700,350" class="edge"/>
+  <text x="650" y="435" class="edgelabel" text-anchor="middle">recorded on</text>
+
+  <text x="20" y="535" class="small">Six roles/artifacts and seven labeled relationships, redrawn from the spec's non-normative architecture overview figure.</text>
+</svg>

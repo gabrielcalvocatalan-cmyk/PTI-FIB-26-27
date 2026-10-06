@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="980"
+   height="600"
+   viewBox="0 0 980 600"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#111"/>
+    </marker>
+    <style>
+      .title { font: 700 18px sans-serif; }
+      .label { font: 13px sans-serif; font-weight: 700; }
+      .small { font: 11px sans-serif; }
+      .mono { font: 10.5px monospace; }
+      .box { fill: #fff; stroke: #111; stroke-width: 1.5; }
+      .oval { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 1.5; }
+      .cyl { fill: #fff3e0; stroke: #e65100; stroke-width: 1.5; }
+      .edge { stroke: #111; stroke-width: 1.4; fill: none; marker-end: url(#arrow2); }
+      .edgelabel { font: 10.5px sans-serif; fill: #333; }
+      .file { font: 10.5px monospace; fill: #2e7d32; }
+    </style>
+  </defs>
+
+  <text x="20" y="28" class="title">Figure 2 - the same roles, mapped onto agent_lab</text>
+
+  <!-- DID Subject -->
+  <ellipse cx="150" cy="100" rx="130" ry="52" class="oval"/>
+  <text x="150" y="88" text-anchor="middle" class="label">DID Subject</text>
+  <text x="150" y="105" text-anchor="middle" class="small">one agent process</text>
+  <text x="150" y="119" text-anchor="middle" class="file">agent_rental.py</text>
+
+  <!-- DID Controller -->
+  <ellipse cx="150" cy="475" rx="130" ry="55" class="oval"/>
+  <text x="150" y="460" text-anchor="middle" class="label">DID Controller</text>
+  <text x="150" y="476" text-anchor="middle" class="small">same process - holds the</text>
+  <text x="150" y="490" text-anchor="middle" class="small">Ed25519 private key in</text>
+  <text x="150" y="505" text-anchor="middle" class="file">keys/agent_rental_keys.json</text>
+
+  <!-- DID -->
+  <rect x="390" y="35" width="260" height="78" rx="6" class="box"/>
+  <text x="520" y="58" text-anchor="middle" class="label">DID</text>
+  <text x="520" y="76" text-anchor="middle" class="mono">did:web:localhost%3A8101</text>
+  <text x="520" y="90" text-anchor="middle" class="mono">:z6Mk...</text>
+  <text x="520" y="105" text-anchor="middle" class="file">identity.py: load_or_create_identity()</text>
+
+  <!-- DID URL -->
+  <rect x="380" y="240" width="280" height="90" rx="6" class="box"/>
+  <text x="520" y="263" text-anchor="middle" class="label">DID URL</text>
+  <text x="520" y="284" text-anchor="middle" class="mono">http://localhost:8101/</text>
+  <text x="520" y="298" text-anchor="middle" class="mono">z6Mk.../did.json</text>
+  <text x="520" y="315" text-anchor="middle" class="file">identity.py: did_document_route()</text>
+
+  <!-- DID document -->
+  <rect x="370" y="450" width="300" height="90" rx="6" class="box"/>
+  <text x="520" y="473" text-anchor="middle" class="label">DID Document</text>
+  <text x="520" y="493" text-anchor="middle" class="small">JSON served at that path</text>
+  <text x="520" y="507" text-anchor="middle" class="file">agent_server.py: serve_did_document()</text>
+  <text x="520" y="521" text-anchor="middle" class="file">identity.py: did_document_json()</text>
+
+  <!-- Verifiable Data Registry (cylinder) -->
+  <rect x="770" y="195" width="170" height="210" class="cyl"/>
+  <ellipse cx="855" cy="195" rx="85" ry="20" class="cyl"/>
+  <path d="M 770,405 A 85,20 0 0 0 940,405" class="box" fill="none" stroke="#e65100"/>
+  <text x="855" y="150" text-anchor="middle" class="label">Verifiable Data</text>
+  <text x="855" y="166" text-anchor="middle" class="label">Registry</text>
+  <text x="855" y="235" text-anchor="middle" class="small">= the agent's own Flask</text>
+  <text x="855" y="330" text-anchor="middle" class="small">HTTP server. did:web has no</text>
+  <text x="855" y="344" text-anchor="middle" class="small">separate ledger: the web</text>
+  <text x="855" y="358" text-anchor="middle" class="small">server IS the registry.</text>
+  <text x="855" y="380" text-anchor="middle" class="file">app.run(...) in agent_rental.py</text>
+
+  <!-- Edges -->
+  <!-- resolves to -->
+  <path d="M 385,100 L 340,100 L 340,458 L 370,458" class="edge"/>
+  <text x="255" y="290" class="edgelabel" text-anchor="middle">resolves to</text>
+  <text x="255" y="304" class="edgelabel" text-anchor="middle" font-style="italic">pyvckit resolve_did(),</text>
+  <text x="255" y="317" class="edgelabel" text-anchor="middle" font-style="italic">patched in identity.py</text>
+
+  <!-- contains -->
+  <path d="M 545,240 L 545,113" class="edge"/>
+  <text x="605" y="180" class="edgelabel" text-anchor="middle">contains</text>
+
+  <!-- refers, and dereferences, to -->
+  <path d="M 545,330 L 545,450" class="edge"/>
+  <text x="640" y="400" class="edgelabel" text-anchor="middle">GET request hits the</text>
+  <text x="640" y="413" class="edgelabel" text-anchor="middle">Flask did_route</text>
+
+  <!-- refers to -->
+  <path d="M 390,65 L 280,80" class="edge"/>
+  <text x="330" y="55" class="edgelabel" text-anchor="middle">names this agent</text>
+
+  <!-- controls -->
+  <path d="M 280,485 L 370,498" class="edge"/>
+  <text x="320" y="450" class="edgelabel" text-anchor="middle">controls</text>
+
+  <!-- recorded on: DID -> VDR -->
+  <path d="M 650,70 L 770,230" class="edge"/>
+  <text x="710" y="140" class="edgelabel" text-anchor="middle">served by</text>
+
+  <!-- recorded on: DID document -> VDR -->
+  <path d="M 670,485 L 770,375" class="edge"/>
+  <text x="710" y="470" class="edgelabel" text-anchor="middle">served by</text>
+
+  <text x="20" y="565" class="small">Every agent (trust_anchor.py, agent_rental.py, agent_rag.py, agent_orchestrator.py) plays this same role for its own identity;</text>
+  <text x="20" y="580" class="small">config.py assigns each its host:port, and common/agent_server.py wires the Flask routes shown above.</text>
+</svg>

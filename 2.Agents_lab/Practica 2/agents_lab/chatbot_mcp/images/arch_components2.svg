@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 800 500"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="arch_components2.svg"
+   inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.58"
+     inkscape:cx="399.68354"
+     inkscape:cy="250"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="3840"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32" />
+  <defs
+     id="defs6">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#333"
+         id="polygon1" />
+    </marker>
+    <linearGradient
+       id="clientGrad"
+       x1="227.23018"
+       y1="54.577257"
+       x2="227.23018"
+       y2="301.36137"
+       gradientTransform="matrix(0.74153882,0,0,1.3485471,-106.96203,-48.101266)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         style="stop-color:#e3f2fd;stop-opacity:1"
+         id="stop1" />
+      <stop
+         offset="100%"
+         style="stop-color:#bbdefb;stop-opacity:1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="serverGrad"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#f3e5f5;stop-opacity:1"
+         id="stop3" />
+      <stop
+         offset="100%"
+         style="stop-color:#e1bee7;stop-opacity:1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="llmGrad"
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%">
+      <stop
+         offset="0%"
+         style="stop-color:#fff3e0;stop-opacity:1"
+         id="stop5" />
+      <stop
+         offset="100%"
+         style="stop-color:#ffe0b2;stop-opacity:1"
+         id="stop6" />
+    </linearGradient>
+    <filter
+       id="shadow"
+       x="-0.0071428571"
+       y="-0.016666667"
+       width="1.0142857"
+       height="1.0333333">
+      <feDropShadow
+         dx="2"
+         dy="2"
+         stdDeviation="2"
+         flood-color="#aaa" />
+    </filter>
+    <marker
+       id="arrowhead-1"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#333333"
+         id="polygon1-9" />
+    </marker>
+    <marker
+       id="arrowhead-8"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#333333"
+         id="polygon1-4" />
+    </marker>
+  </defs>
+  <rect
+     x="40.104202"
+     y="19.346153"
+     width="550.55109"
+     height="351.81439"
+     rx="11.968502"
+     fill="none"
+     stroke="#999999"
+     stroke-dasharray="4.37368, 4.37368"
+     id="rect6"
+     style="stroke-width:0.956751" />
+  <text
+     x="173.5443"
+     y="46.329113"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#777777"
+     id="text6"
+     style="font-size:12px;font-family:Arial, sans-serif;fill:#777777"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan32">Host Machine (Local)</tspan></text>
+  <g
+     transform="matrix(0.81233796,0,0,0.87359963,53.849702,117.0877)"
+     id="g7">
+    <circle
+       cx="20"
+       cy="20"
+       r="15"
+       fill="#555555"
+       id="circle6" />
+    <path
+       d="M 20,35 V 60 M 5,45 H 35 M 20,60 10,80 M 20,60 30,80"
+       stroke="#555555"
+       stroke-width="3"
+       fill="none"
+       id="path6" />
+    <text
+       x="20"
+       y="100"
+       font-family="Arial, sans-serif"
+       font-size="14px"
+       font-weight="bold"
+       text-anchor="middle"
+       id="text7">User</text>
+  </g>
+  <path
+     d="M 90.253164,157.8481 H 180.25317"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path7" />
+  <path
+     d="m 299,157.24051 h 90"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead-1)"
+     id="path7-7"
+     style="marker-end:url(#arrowhead-1)" />
+  <path
+     d="M 178.98734,172.27848 H 88.987341"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead)"
+     id="path8" />
+  <path
+     d="m 391.21519,171.03798 h -90"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrowhead-8)"
+     id="path8-0"
+     style="marker-end:url(#arrowhead-8)" />
+  <text
+     x="135.25319"
+     y="152.8481"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     text-anchor="middle"
+     id="text8">CLI</text>
+  <text
+     x="228.35443"
+     y="64.493668"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#0d47a1"
+     text-anchor="middle"
+     id="text9">MCP Client Process</text>
+  <text
+     x="228.35443"
+     y="79.493668"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#0d47a1"
+     text-anchor="middle"
+     id="text10"
+     style="font-size:10px;font-family:Arial, sans-serif;text-anchor:middle;fill:#0d47a1"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan40">(client_mcp.py)</tspan></text>
+  <rect
+     x="138.15259"
+     y="99.481697"
+     width="179.7708"
+     height="31.796104"
+     rx="4.7938876"
+     fill="#ffffff"
+     stroke="#1976d2"
+     id="rect10"
+     style="stroke-width:0.976047" />
+  <text
+     x="228.98734"
+     y="120.06329"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text11"
+     style="font-size:11px;font-family:Arial, sans-serif;text-anchor:middle"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan37">Chat Loop / Logic</tspan></text>
+  <rect
+     x="140.05133"
+     y="184.54498"
+     width="179.7708"
+     height="31.796104"
+     rx="4.7938876"
+     fill="#ffffff"
+     stroke="#1976d2"
+     id="rect11"
+     style="stroke-width:0.976047" />
+  <text
+     x="228.35443"
+     y="205.75949"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text12"
+     style="font-size:11px;font-family:Arial, sans-serif;text-anchor:middle"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan38">MCP ClientSession</tspan></text>
+  <text
+     x="228.98735"
+     y="345.06329"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#e65100"
+     text-anchor="middle"
+     id="text13"
+     style="font-weight:bold;font-size:12px;font-family:Arial, sans-serif;text-anchor:middle;fill:#e65100"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan43">Ollama Service</tspan></text>
+  <text
+     x="228.98735"
+     y="360.06329"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#e65100"
+     text-anchor="middle"
+     id="text14">Model: llama3.2</text>
+  <path
+     d="m 228.98734,225.06329 v 90"
+     stroke="#f57c00"
+     stroke-width="2"
+     stroke-dasharray="4, 2"
+     marker-end="url(#arrowhead)"
+     id="path14" />
+  <path
+     d="m 218.98734,315.06329 v -90"
+     stroke="#f57c00"
+     stroke-width="2"
+     stroke-dasharray="4, 2"
+     marker-end="url(#arrowhead)"
+     id="path15" />
+  <text
+     x="240.88606"
+     y="-241.4557"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#e65100"
+     transform="rotate(90)"
+     id="text15">API / JSON</text>
+  <rect
+     x="390"
+     y="150"
+     width="180"
+     height="180"
+     rx="8"
+     fill="url(#serverGrad)"
+     stroke="#8e24aa"
+     stroke-width="2"
+     filter="url(#shadow)"
+     id="rect15" />
+  <text
+     x="471.77216"
+     y="66.772148"
+     font-family="Arial, sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#4a148c"
+     text-anchor="middle"
+     id="text16">MCP Server Process</text>
+  <text
+     x="471.77216"
+     y="81.772148"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     fill="#4a148c"
+     text-anchor="middle"
+     id="text17"
+     style="font-size:10px;font-family:Arial, sans-serif;text-anchor:middle;fill:#4a148c"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan41">(server_mcp.py)</tspan></text>
+  <rect
+     x="396.77216"
+     y="101.77215"
+     width="150"
+     height="30"
+     rx="4"
+     fill="#ffffff"
+     stroke="#8e24aa"
+     id="rect17" />
+  <text
+     x="471.77216"
+     y="121.77215"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     id="text18"
+     style="font-size:11px;font-family:Arial, sans-serif;text-anchor:middle"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan36">FastMCP (Stdio)</tspan></text>
+  <g
+     transform="translate(396.77215,141.77215)"
+     id="g22">
+    <rect
+       x="0"
+       y="0"
+       width="150"
+       height="70"
+       rx="4"
+       fill="#f3e5f5"
+       stroke="#8e24aa"
+       stroke-dasharray="2, 2"
+       id="rect18" />
+    <text
+       x="5"
+       y="15"
+       font-family="Arial, sans-serif"
+       font-size="10px"
+       font-weight="bold"
+       fill="#4a148c"
+       id="text19"
+       style="font-weight:bold;font-size:10px;font-family:Arial, sans-serif;fill:#4a148c"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan42">Registered Tools:</tspan></text>
+    <text
+       x="10"
+       y="30"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#333333"
+       id="text20"
+       style="font-size:9px;font-family:Arial, sans-serif;fill:#333333"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan33">• list_rentals()</tspan></text>
+    <text
+       x="10"
+       y="45"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#333333"
+       id="text21"
+       style="font-size:9px;font-family:Arial, sans-serif;fill:#333333"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan34">• get_alerts()</tspan></text>
+    <text
+       x="10"
+       y="60"
+       font-family="Arial, sans-serif"
+       font-size="9px"
+       fill="#333333"
+       id="text22"
+       style="font-size:9px;font-family:Arial, sans-serif;fill:#333333"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+         id="tspan35">• get_forecast()</tspan></text>
+  </g>
+  <text
+     x="349.11392"
+     y="167.46835"
+     font-family="Arial, sans-serif"
+     font-size="10px"
+     font-weight="bold"
+     text-anchor="middle"
+     id="text23">STDIO</text>
+  <text
+     x="342.15189"
+     y="147.97469"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text24"
+     style="font-size:9px;font-family:Arial, sans-serif;text-anchor:middle;fill:#555555"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       id="tspan39">JSON-RPC</tspan></text>
+  <text
+     x="653.16455"
+     y="75.696198"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#2e7d32"
+     text-anchor="middle"
+     id="text25">Local Dataset</text>
+  <text
+     x="655.06329"
+     y="88.79747"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text26">chatbot-car_rental/dataset/</text>
+  <text
+     x="655.06329"
+     y="103.79747"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text27">rentals.csv</text>
+  <rect
+     x="630"
+     y="270"
+     width="140"
+     height="60"
+     rx="5"
+     fill="#fff"
+     stroke="#0288d1"
+     stroke-width="2"
+     filter="url(#shadow)"
+     id="rect27" />
+  <text
+     x="655.06329"
+     y="193.79747"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#01579b"
+     text-anchor="middle"
+     id="text28">NWS API</text>
+  <text
+     x="655.06329"
+     y="208.79747"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text29">api.weather.gov</text>
+  <text
+     x="655.06329"
+     y="223.79747"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text30">(Internet)</text>
+  <path
+     d="m 555.44304,127.59494 50,-30.000003"
+     stroke="#2e7d32"
+     stroke-width="2"
+     stroke-dasharray="3, 3"
+     marker-end="url(#arrowhead)"
+     id="path30" />
+  <text
+     x="433.85739"
+     y="377.65088"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#2e7d32"
+     transform="rotate(-30)"
+     id="text31">file read</text>
+  <path
+     d="m 555.44304,167.59494 50,30"
+     stroke="#0288d1"
+     stroke-width="2"
+     stroke-dasharray="3, 3"
+     marker-end="url(#arrowhead)"
+     id="path31" />
+  <text
+     x="583.45734"
+     y="-116.00451"
+     font-family="Arial, sans-serif"
+     font-size="9px"
+     fill="#0288d1"
+     transform="rotate(30)"
+     id="text32">HTTP GET</text>
+</svg>

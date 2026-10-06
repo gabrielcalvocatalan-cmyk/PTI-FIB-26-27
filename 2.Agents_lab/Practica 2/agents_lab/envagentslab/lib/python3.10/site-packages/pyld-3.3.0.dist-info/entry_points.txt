@@ -1,0 +1,2 @@
+[console_scripts]
+pyld = pyld.cli.entry:main

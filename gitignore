@@ -1,0 +1,29 @@
+# Entornos virtuales
+venv/
+practfl/
+env*/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Datasets y modelos pesados
+chest_xray/
+database/
+*.h5
+*.keras
+keras_model_*/
+saved_index/
+*.pkl
+
+# Claves y credenciales de los agentes (no subir nunca)
+keys/
+*.pem
+*key*.json
+credentials/
+
+# Varios
+.DS_Store
+.vscode/
+.idea/

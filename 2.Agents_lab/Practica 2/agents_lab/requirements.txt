@@ -1,0 +1,24 @@
+# Same LangChain/Ollama versions as chatbot-car_rental/requirements.txt
+# (section 1) - this matters, not just for consistency: agent_rag.py loads
+# the pickled vector index that create_index.py produces in section 1, and
+# an unpickled LangChain object generally only loads back cleanly under the
+# same library versions it was created with.
+langchain==0.2.15
+langchain-community==0.2.14
+langchain-ollama==0.1.2
+
+flask
+requests
+
+# pyvckit's own setup.py lists pyroaring only as a test dependency, but
+# pyvckit/verify.py imports it unconditionally at module load time - so it
+# has to be installed explicitly here or "import pyvckit.verify" fails.
+pyroaring
+
+git+https://github.com/ereuse/pyvckit.git@main
+
+
+# pyvckit built from https://github.com/ereuse/pyvckit at commit 6e35532 (main, 2026-09-19).
+# Bundled as a local wheel so the install does not depend on a GitHub branch.
+# Run pip from agents_lab/ - the path below is relative to the current directory.
+#./vendor/pyvckit-0.0.18-py3-none-any.whl

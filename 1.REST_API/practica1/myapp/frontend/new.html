@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- car rental example: request form for a new rental, posted as JSON to the REST API -->
+<html>
+<head><title>Car Rental - New</title></head>
+<body>
+<h1>New rental</h1>
+
+<table>
+<tr>
+  <td>Engine:</td>
+  <td>
+    <select id="engine">
+      <option selected value="Hybrid">Hybrid</option>
+      <option value="Electric">Electric</option>
+    </select>
+  </td>
+</tr>
+<tr>
+  <td>CO2 rating:</td>
+  <td>
+    <select id="co2_rating">
+      <option selected value="Extralow">Extralow</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+  </td>
+</tr>
+<tr>
+  <td>Number of days:</td>
+  <td><input id="days" type="number" min="1" value="1"></td>
+</tr>
+<tr>
+  <td>Number of units:</td>
+  <td><input id="units" type="number" min="1" value="1"></td>
+</tr>
+<tr>
+  <td>Discount (%):</td>
+  <td><input id="discount" type="number" min="0" max="100" value="0"></td>
+</tr>
+</table>
+
+<br>
+<button id="submit">Submit</button>
+
+<pre id="result"></pre>
+
+<br>
+<a href="index.html">Home</a>
+
+<script>
+  // Change this if your backend listens on a different host/port.
+  const API_BASE = 'http://localhost:8080';
+
+  document.getElementById('submit').addEventListener('click', async () => {
+    const rental = {
+      engine: document.getElementById('engine').value,
+      co2_rating: document.getElementById('co2_rating').value,
+      days: Number(document.getElementById('days').value),
+      units: Number(document.getElementById('units').value),
+      discount: Number(document.getElementById('discount').value)
+    };
+
+    const result = document.getElementById('result');
+    try {
+      // Adjust the path/method here to match the endpoint you designed in 2.1.
+      const res = await fetch(`${API_BASE}/newrental`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(rental)
+      });
+      result.textContent = `HTTP ${res.status}\n` + JSON.stringify(rental, null, 2);
+    } catch (err) {
+      result.textContent = 'Request failed: ' + err;
+    }
+  });
+</script>
+
+</body>
+</html>

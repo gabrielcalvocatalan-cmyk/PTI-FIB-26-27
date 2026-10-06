@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- car rental example: fetches the list of rentals from the REST API and renders it -->
+<html>
+<head><title>Car Rental - List</title></head>
+<body>
+<h1>List of rental orders</h1>
+
+<button id="fetch-list">Get rentals list</button>
+
+<table id="rentals" border="1">
+<thead>
+<tr><th>Engine</th><th>CO2 rating</th><th>Days</th><th>Units</th><th>Discount</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<pre id="error"></pre>
+
+<br>
+<a href="index.html">Home</a>
+
+<script>
+  // Change this if your backend listens on a different host/port.
+  const API_BASE = 'http://localhost:8080';
+
+  document.getElementById('fetch-list').addEventListener('click', async () => {
+    const tbody = document.querySelector('#rentals tbody');
+    const error = document.getElementById('error');
+    tbody.innerHTML = '';
+    error.textContent = '';
+    try {
+      // Adjust the path/method here to match the endpoint you designed in 2.1.
+      const res = await fetch(`${API_BASE}/rentals`);
+      const rentals = await res.json();
+      for (const r of rentals) {
+        const row = document.createElement('tr');
+        for (const field of ['engine', 'co2_rating', 'days', 'units', 'discount']) {
+          const cell = document.createElement('td');
+          cell.textContent = r[field];
+          row.appendChild(cell);
+        }
+        tbody.appendChild(row);
+      }
+    } catch (err) {
+      error.textContent = 'Request failed: ' + err;
+    }
+  });
+</script>
+
+</body>
+</html>
