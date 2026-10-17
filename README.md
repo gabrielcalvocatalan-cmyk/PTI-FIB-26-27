@@ -11,6 +11,7 @@ Cada carpeta contiene el código de una práctica y su informe en PDF.
 | `1.REST_API` | API REST de alquiler de coches (carrental) | Python, Flask, Docker |
 | `2.Agents_lab` | Chatbot con RAG, chatbot con MCP y red de agentes con identidades DID y credenciales verificables | Ollama, LangChain, MCP, DID, VC |
 | `3.Microservices` | Despliegue de la API como microservicio con réplicas, Ingress y autoescalado (HPA) | Docker, Kubernetes, Minikube |
+| `4.Blockchain` | Blockchain simplificada con Proof-of-Work, consenso entre dos nodos y endpoints para listar nodos, validar y manipular la cadena | Python, Flask, curl |
 | `5.MLBA` | Entrenamiento federado de un modelo de detección de neumonía y su integración en una aplicación web | TensorFlow/Keras, Flask |
 
 ### 1 · REST API
@@ -23,6 +24,15 @@ API con dos endpoints: registrar un nuevo alquiler (calcula el precio total) y l
 
 ### 3 · Microservices
 Despliegue de la API en Minikube con 3 réplicas, inspección desde el Dashboard, gestión mediante manifests YAML, exposición con Ingress (`carrental.local`) y autoescalado horizontal según el uso de CPU, probado con carga generada con `hey`.
+
+### 4 · Blockchain
+Blockchain simplificada accesible mediante una API web, con dos nodos (puertos 5000 y 5001):
+- **Transacciones y minado:** alta de transacciones y minado de bloques con Proof-of-Work (hash SHA-256 que empieza por cuatro ceros), con recompensa para el nodo minero.
+- **Consenso:** registro mutuo de nodos y resolución de conflictos adoptando la cadena válida más larga. Toda la secuencia se automatiza en `script.sh`.
+- **Nuevos endpoints:** `/nodes/list` (nodos registrados), `/validate` (comprueba la cadena de hashes) y `/nodes/manipulate` (altera un bloque para que la validación falle y el consenso rechace la cadena).
+- **Informe:** alternativas al PoW (PoS, PoA), protección de las transacciones con firmas digitales, almacenamiento del estado de saldos y técnicas de privacidad (zk-SNARKs, commitments).
+
+Realizada junto con Lucas Díaz López.
 
 ### 5 · MLBA (Machine Learning)
 Red de un servidor agregador y tres clientes que entrenan una CNN con el dataset Chest X-Ray sin compartir los datos, solo los pesos del modelo. El modelo resultante se integra en una aplicación web que clasifica radiografías en *normal* o *pneumonia*.
